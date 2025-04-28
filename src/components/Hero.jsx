@@ -23,7 +23,8 @@ const Hero = () => {
   };
 
   return (
-    <div className='py-[127px] max-lg:py-20 max-md:py-10 max-sm:py-5 px-4'>
+    <div className='min-h-screen flex justify-center items-center'>
+    <div className='py-5 px-4'>
       <div className='py-[13px] mb-[19px] px-[17px] border-[rgb(237_38_110)] border rounded-full w-fit mx-auto'>
         <p className='uppercase text-[rgb(0_5_14)]'>Increase Revenue</p>
       </div>
@@ -134,6 +135,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
