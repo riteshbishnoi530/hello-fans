@@ -70,24 +70,9 @@ const Hero = () => {
               step="100"
               value={subs}
               onChange={handleSubsChange}
-              className="w-full max-w-[333px] appearance-none bg-transparent"
+              className="w-full max-w-[333px] bg-transparent"
               style={{ zIndex: 10 }}
             />
-
-            <div className="relative flex justify-between w-full max-w-[333px] mt-2">
-              {Array.from({ length: 40 }).map((_, index) => {
-                const tickValue = 100 + index * ((30000 - 100) / 39);
-                const isFilled = subs >= tickValue;
-
-                return (
-                  <span
-                    key={index}
-                    className={`w-[2px] h-4 rounded-sm ${isFilled ? 'bg-gradient-to-r from-[#ed2076] to-[#f0493b]' : 'bg-gray-300'
-                      }`}
-                  ></span>
-                );
-              })}
-            </div>
 
           </div>
 
