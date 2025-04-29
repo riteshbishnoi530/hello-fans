@@ -127,7 +127,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-[#ed2076] to-[#f0493b] text-white px-10 py-10 rounded-lg shadow-lg w-full max-w-[529px] h-fit text-center">
+        <div className="bg-gradient-to-r from-[#ed2076] to-[#f0493b] text-white px-10 py-10 rounded-lg shadow-lg w-full min-w-[529px] max-sm:min-w-full h-fit text-center">
           <h3 className="text-xl font-semibold mb-2">Estimated monthly earnings</h3>
           <div className="text-5xl font-medium mb-[34px] mt-[26px]">${getEarnings().toLocaleString()}</div>
           <button className="cursor-pointer font-bold py-[14px] px-[30px] border border-white rounded-full hover:bg-white hover:text-pink-600 transition">
